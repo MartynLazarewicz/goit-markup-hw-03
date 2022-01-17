@@ -32,7 +32,7 @@
   --l-height-42: 2.625rem;
   --l-height-60: 3.75rem;
 
-  --maxwidth: 1170px;
+  --maxwidth: 1200px;
 
   --gap-6: 6px;
   --gap-8: 8px;
@@ -82,20 +82,25 @@ body {
   margin: 0 auto;
 }
 
-.container-mt {
-  margin-top: var(--gap-94);
+.container-pt {
+  padding-top: var(--gap-94);
 }
 
-.container-mb {
-  margin-bottom: var(--gap-94);
+.container-pb {
+  padding-bottom: var(--gap-94);
 }
 
-.mb-94 {
-  margin-bottom: var(--gap-94);
+.pb {
+  padding-bottom: var(--gap-94);
 }
 
-.mt-94 {
-  margin-top: var(--gap-94);
+.pt {
+  padding-top: var(--gap-94);
+}
+
+.py {
+  padding-top: var(--gap-94);
+  padding-bottom: var(--gap-94);
 }
 
 ul {
@@ -119,6 +124,10 @@ h2 {
 }
 
 /* Navigation */
+
+.header {
+  border: 1px solid #ececec;
+}
 
 .header-content {
   display: flex;
@@ -225,6 +234,11 @@ h2 {
 .about-content {
   display: flex;
   gap: var(--gap-30);
+  justify-content: center;
+}
+
+.about-content-item {
+  width: 270px;
 }
 
 .about-content-item h3 {
@@ -252,6 +266,7 @@ h2 {
 .what-we-do-content {
   display: flex;
   gap: var(--gap-30);
+  justify-content: center;
 }
 
 /* Team */
@@ -306,6 +321,7 @@ h2 {
 .footer-content {
   margin-top: var(--gap-60);
   margin-bottom: var(--gap-60);
+  padding-left: var(--gap-30);
 }
 
 .footer-logo {
