@@ -126,7 +126,7 @@ h2 {
 /* Navigation */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-content {
@@ -369,9 +369,7 @@ address {
 
 .portfolio-filtr-content {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: var(--gap-50);
+  padding-bottom: var(--gap-50);
   align-items: center;
   justify-content: center;
 }
