@@ -158,7 +158,7 @@ h2 {
 
 .nav-link {
   color: var(--color-primary);
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .active-link {
@@ -182,7 +182,7 @@ h2 {
   line-height: var(--l-height-16);
   font-weight: var(--font-normal);
   letter-spacing: var(--l-spacing-02);
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .header-contact-link:hover,
@@ -304,10 +304,9 @@ h2 {
   height: auto;
   overflow: hidden;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition: box-shadow 150ms ease-in-out, background 150ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out;
 }
 
 /* Footer */
@@ -356,7 +355,7 @@ address {
   line-height: var(--l-height-24);
   font-weight: var(--font-normal);
   letter-spacing: var(--l-spacing-03);
-  transition: color 150ms ease-in-out, opacity 150ms ease-in-out;
+  transition: color 250ms ease-in-out, opacity 250ms ease-in-out;
 }
 
 .footer-contact-link a:hover,
@@ -389,7 +388,7 @@ address {
   border-radius: var(--border-r-4);
   padding: var(--gap-6) var(--gap-22);
   cursor: pointer;
-  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
 .portfolio-filtr-content-item--button:hover,
@@ -414,15 +413,14 @@ address {
   height: auto;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  transition: box-shadow 150ms ease-in-out, background 150ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out;
   overflow: hidden;
 }
 
 .portfolio-content-item:hover,
 .portfolio-content-item:focus {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -449,11 +447,9 @@ address {
 }
 
 img {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
 img[alt]::before {
@@ -463,18 +459,13 @@ img[alt]::before {
   font-weight: var(--font-bold);
   font-family: var(--font-primary);
   letter-spacing: var(--l-spacing-06);
-  width: 100%;
-  text-align: right;
-  position: absolute;
-  right: 40%;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 img[alt]::after {
   content: '';
   background: url(../images/not-found-icon-18.jpg) no-repeat;
   background-size: contain;
+  width: 30px;
   height: 30px;
   color: var(--color-primary);
   font-size: var(--font-18);
@@ -482,10 +473,4 @@ img[alt]::after {
   font-weight: var(--font-bold);
   font-family: var(--font-primary);
   letter-spacing: var(--l-spacing-06);
-  width: 100%;
-  text-align: left;
-  position: absolute;
-  left: 60%;
-  top: 50%;
-  transform: translateY(-50%);
 }
