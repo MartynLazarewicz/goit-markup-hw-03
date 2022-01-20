@@ -82,14 +82,6 @@ body {
   margin: 0 auto;
 }
 
-.container-pt {
-  padding-top: var(--gap-94);
-}
-
-.container-pb {
-  padding-bottom: var(--gap-94);
-}
-
 .pb {
   padding-bottom: var(--gap-94);
 }
@@ -195,11 +187,14 @@ h2 {
 .hero {
   background: var(--color-bg-dark);
   height: 37.5rem;
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -212,7 +207,7 @@ h2 {
   width: 46.5rem;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: var(--gap-30);
+  padding-bottom: var(--gap-30);
 }
 
 .hero-btn {
@@ -318,8 +313,8 @@ h2 {
 }
 
 .footer-content {
-  margin-top: var(--gap-60);
-  margin-bottom: var(--gap-60);
+  padding-top: var(--gap-60);
+  padding-bottom: var(--gap-60);
   padding-left: var(--gap-30);
 }
 
